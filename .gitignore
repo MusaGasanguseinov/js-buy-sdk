@@ -12,7 +12,6 @@ types.js
 optimized-types.js
 
 # Build artifacts
-index.*
 !docs/index.html
 
 # Decrypted secrets

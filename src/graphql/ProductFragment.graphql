@@ -8,12 +8,39 @@ fragment ProductFragment on Product {
   handle
   productType
   title
+  totalInventory
   vendor
   publishedAt
   onlineStoreUrl
   options {
     name
     values
+  }
+  compareAtPriceRange {
+    minVariantPrice {
+      amount
+      currencyCode
+    }
+    maxVariantPrice {
+      amount
+      currencyCode
+    }
+  }
+  priceRange {
+    minVariantPrice {
+      amount
+      currencyCode
+    }
+    maxVariantPrice {
+      amount
+      currencyCode
+    }
+  }
+  tags
+  featuredImage {
+    id
+    src
+    altText
   }
   images(first: 250) {
     pageInfo {
